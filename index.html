@@ -16,6 +16,10 @@
       font-size: 13px;
       display: flex;
       justify-content: center;
+      background-image: url("images/backgroundPaper.jpg");
+      /*background-repeat:no-repeat;*/
+      background-size:contain;
+      background-position:center;
     }
     main {       
       text-align: left;
@@ -50,10 +54,35 @@
       padding: 20px;
       overflow-y: scroll;
     } 
-
+    .index-img {
+                width: 100%;
+                max-width: 250px;
+                border: 5px solid var(--orange);
+                border-radius: 20px;
+                transform: rotate(-10deg);
+                margin: 30px 0px 50px;
+                box-shadow: var(--shadow);
+            }
+            .index-img:hover { 
+                animation: .6s ease 0s forwards wiggle;
+            } 
+            @keyframes wiggle {
+                0% {
+                    transform: rotate(-10deg); /*start*/
+                }
+                33% {
+                    transform: rotate(-5deg); /*+5deg*/
+                }
+                66% {
+                    transform: rotate(-15deg); /*-10deg*/
+                }
+                100% {
+                    transform: rotate(-10deg); /*+5deg*/
+                }
+            }
     /* css */
     hr {
-    border-top: 1px black dotted;
+    border-top: 3px black dotted;
     margin-top: -15px;
     }
     ::selection {background-color: #fffdd4;}
@@ -73,34 +102,71 @@
       color: rgb(38, 0, 255);
       text-decoration: none;
     }
+    
+    .text {
+      width: 30px;
+      height: 65px;
+      /*border-right: 3px solid;*/
+      animation: blink-caret 1s step-end infinite, typing 2.5s steps(29) forwards;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    /*@keyframes blink-caret {
+      0%{
+        border-color: transparent;
+      } 
+      50%{
+        border-color:black;
+      }
+    }*/
+
+    @keyframes typing {
+      from {
+        width: 0;
+      } to {
+        width: 50%
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      img {
+        width: 100%;
+      }
+    }
   </style>
 
   <body>
     <main>
-        <h1>₊ ݁. j a s m i n b . ₊</h1>
+        <div class="text">
+          <h1>₊ ݁.j a s m i n b. ₊</h1>
+        </div>
         <hr>
         <center>
           <div>
             <button class="button"><a href="aboutMe.html">about</a></button>
-            <button class="button"><a href="wk1_response.html">wk1 response</a></button>
-            <button class="button"><a href="wk2_response.html">wk2 response</a></button>
-            <button class="button"><a href="">wk3 response</a></button>
+            <button class="button"><a href="wk1_response.html">week 1</a></button>
+            <button class="button"><a href="wk2_response.html">week 2</a></button>
+            <button class="button"><a href="">week 3</a></button>
           </div>
             <br>
-            <img src="images/avatarMe.png" width="300px">
+            <img src="images/avatarMe.png" width="300px" class = "index-img">
         </center>
-
-        <p> hello! welcome to my little space on the internet •ᴗ• this website holds all my projects and assignments for a future portfolio </p>
+        
+        <p><b>Hello!</b> welcome to my little space on the internet •ᴗ• this website holds all my projects and assignments for a future portfolio </p>
         <p>fun fact: i have a cat named cookies </p>
         <h3>✧ updates</h3>
         <hr>
         <div class="updt">
-          <b>sep, 10:</b> added <a href = "wk2_response.html">wk2 response</a> + update website through github
+          <b>sep, 17:</b> revamped <a href="wk1_response.html">week 1</a> page + added text animations <br>
+          <b>sep, 16:</b> fixed spacing mistake in <a href = "index.html">index page</a> + made images responsive + re-named webpage titles + added paper background<br>
+          <b>sep, 10:</b> added <a href = "wk2_response.html">wk2 response</a> + update website through github <br>
           <b>sep, 09:</b> revamped main page + <a href = "wk1_response.html">wk1 response</a> <br>
           <b>sep, 08:</b> created <a href="aboutMe.html">aboutMe.html</a> and changed design + layout <br>
           <b> aug, 29:</b> launched the website! added <a href="wk1_response.html">wk1 response</a> <br> 
           <b>aug, 28:</b> created about me page as class exercise <br>
         </div>
+        <br>
     </main>
   </body>
 </html>

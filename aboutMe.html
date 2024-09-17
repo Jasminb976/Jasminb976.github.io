@@ -17,6 +17,10 @@
                 letter-spacing:1px; 
                 margin: 0;
             }
+            .menu{
+                text-align: center;
+                background-color: rgb(216, 145, 157);
+            }
             h1 {
                 background-color:#e4cdd5;
                 color:rgb(216, 145, 157);
@@ -70,16 +74,24 @@
                 grid-template-columns: repeat(3, 1fr);
                 gap: 8px;
             }
+            @media only screen and (max-width: 480px) {
+                img {
+                 width: 100%;
+                 height: 100%;
+                }
+            }
         </style>
     </head>
     <body>
-        <a href="index.html">home</a>︙<a href="wk1_response.html">wk1 response</a>︙<a href="wk2_response.html">wk2 response</a>︙<a href="">wk3 response</a>
+        <div class = "menu">
+            <a href="index.html">home</a>︙<a href="wk1_response.html">week 1</a>︙<a href="wk2_response.html">week 2</a>︙<a href="">week 3</a>
+        </div>
         <hr class="solid">
         <br><center>
-            <marquee behavior="scroll" direction="right">h e l l o  w o r l d!</marquee>
+            <marquee behavior="scroll" direction="right">h e l l o_w o r l d!</marquee>
             <h1 padding="10px">Jasmin Bonilla</h1>
             <img src = "images/avatarMe.png" height = "200" width = "200"><br><br>
-            <marquee behavior="scroll" direction="left">h e l l o w o r l d!</marquee>
+            <marquee behavior="scroll" direction="left">h e l l o_w o r l d!</marquee>
         </center>
         <div>
             <h2>
@@ -98,7 +110,7 @@
             <br>
             <hr class="solid">
             <p>I am proficient in HTML, CSS, and Python. I know the basics in C++ and Javascript as well as have dabble into PHP and SQL.</p>
-            <p>I love doing the NY Times <a href="https://www.nytimes.com/games/connections">Connections</a> game during my commute to school while listening to music.</p>
+            <p>I love doing the NY Times <a href="https://www.nytimes.com/games/connections" target="_blank">Connections</a> game during my commute to school while listening to music.</p>
         </div> 
         <br>
         <br>

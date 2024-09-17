@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Mab Lib Exercise</title>
+  <style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    main {       
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        position: relative;
+        background-color:rgb(112, 156, 194)
+    }
+    hr{
+        border-top: 1px black dotted;
+        margin-top: -15px;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        color: aliceblue
+    }
+    ul{
+        text-align: center;
+        list-style-type: none;
+    }
+    button{
+        background-color: rgba(70, 88, 161, 0.549);
+        color:aliceblue;
+        font-family: Poppins;
+        border: none;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+    }
+    story{
+        text-align:center;
+        font-size: 100px;
+        font-family: Poppins;
+        font-weight: bold;
+    }
+  </style>
+ </head>
+ <body>
+ <main>
+ <h1>Mad Libs</h1>
+ <hr>
+ <ul>
+  <li>Noun: <input type="text" id="noun"></li><br>
+  <li>Adjective: <input type="text" id="adjective"></li> <br>
+  <li>Someone's Name: <input type="text" id="person"></li>
+ </ul>
+ 
+ <button id="lib-button" onclick = "madlib()" href= "#story">Lib it!</button>
+ <br> <br>
+ <div id="story"></div>
+  </main>
+ </body>
+ <script>
+    function madlib(){
+        var noun = document.getElementById("noun").value;
+        var adjective = document.getElementById("adjective").value;
+        var name = document.getElementById("person").value;
+
+        document.getElementById('story').innerHTML = "One day, " + name + " bought a " + noun + " that was really " + adjective + "."
+
+        
+    }
+ </script>
+</html>
