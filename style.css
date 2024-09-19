@@ -3,15 +3,9 @@
 
 html,
 body {
-  background: url() repeat center center/auto fixed #f6f5f2;
+  background-color: #b4c3c6;
 }
 
-html,
-body,
-a,
-a:hover {
-  cursor: url(https://lighthearted.neocities.org/img/cursor.png), auto;
-}
 
 ul { list-style-type: none; }
 
@@ -44,9 +38,9 @@ body {
 
 .title {
   font-size: 30px;
-  font-family: "Cedarville Cursive", sans-serif;
+  font-family: "Niramit", sans-serif;
   color: #b4c3c6;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   line-height: 1;
   margin: 20px 0;
   padding: 0;
