@@ -16,32 +16,16 @@
       font-size: 13px;
       display: flex;
       justify-content: center;
+      margin: 0;
     }
-    main {       
+    main{       
       text-align: left;
-      max-width: 500px;
-      width: 90%;
+      /*max-width: 500px;*/
+      width: 100%;
       position: relative;
+      margin-left: 100px;
+      float: inherit;
     }
-
-    /* columns */
-    .col {
-      display: grid;
-      grid-template-columns: 50% auto;
-      grid-gap: 10px;
-    }
-    .col>div {
-      border: dotted 1px #CCDBCF;
-      padding: 5%;
-    } 
-
-    /* caixa */
-    .caixa {
-      border: dotted 1px #CCDBCF;
-      padding: 5%;
-      margin-top: 5%;
-      max-width: auto;
-    } 
 
     /* update */
     .updt{
@@ -81,83 +65,58 @@
     border-top: 3px black dotted;
     margin-top: -15px;
     }
-    /*::selection {background-color: #fffdd4;}
-    button {
-      background-color: rgba(75, 132, 211, 0.549);
-      font-family: Poppins;
-      border: none;
-      padding: 5px 15px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 12px;
-      font-weight: bold;
-    }
-    button a {color: rgb(0, 0, 0);}
-    a{
-      color: rgb(38, 0, 255);
-      text-decoration: none;
-    } */
     
     a {
       text-decoration: none;
     }
 
-    nav {
-	    font-family: monospace;
-      text-align: center;
+    #mySidenav a {
+      position: absolute;
+      left: -180px;
+      transition: 1s;
+      padding: 10px;
+      width: 100px;
+      text-decoration: none;
+      text-align: right;
+      font-size: 10px;
+      color: white;
+      border-radius: 0 5px 5px 0;
     }
 
-    ul {
-      background: #ADBABD;
-	    list-style: none;
-	    margin: 0;
-	    padding-left: 0;
+    #mySidenav a:hover {
+      left: -100px;
+    } 
+
+    #about {
+      top: 50px;
+      background-color: #011638;
     }
 
-    li {
-	    color: #fff;
-      background: #ADBABD;
-	    display: block;
-	    float: left;
-	    padding: 1rem;
-	    position: relative;
-	    text-decoration: none;
-      transition-duration: 0.5s;
-    }
-  
-    li a {
-      color: #fff;
+    #weekResponse1{top: 100px}
+    #weekResponse2{top:150px}
+    #weekResponse1,
+    #weekResponse2{
+      background-color: #507DBC;
     }
 
-    li:hover {
-	    background: #6EB4D1;
-	    cursor: pointer;
+    #classExercise {
+      top: 200px;
+      background-color: #A1C6EA;
+    }
+    #codingPractice1{top:260px}
+    #codingPractice2{top:310px}
+    #codingPractice2pt2{top:370px}
+    #codingPractice1,
+    #codingPractice2, 
+    #codingPractice2pt2{
+      background-color: #BBD1EA
     }
 
-    ul li ul {
-	    background: #ADBABD;
-	    visibility: hidden;
-      opacity: 0;
-      min-width: 5rem;
-	    position: absolute;
-      transition: all 0.5s ease;
-      margin-top: 1rem;
-	    left: 0;
-      display: none;
+    #github{top:430px}
+    #github{
+      background-color:#DAE3E5;
     }
 
-    ul li:hover > ul,
-    ul li ul:hover {
-      visibility: visible;
-      opacity: 1;
-      display: block;
-    }
-
-    ul li ul li {
-	    clear: both;
-      width: 100%;
-    }
     .text {
       width: 30px;
       height: 65px;
@@ -191,6 +150,9 @@
       img {
         width: 20%;
       }
+      h1{
+        font-size:20px
+      }
     }
   </style>
   <body>
@@ -204,25 +166,19 @@
         <center>
             <img src="images/avatarMe.png" width="300px" class = "index-img">
         </center> 
-        <nav role="navigation">
-            <ul>
-              <li><a href="aboutMe.html">about</a></li>
-              <li><a href="#">week response</a>
-                <ul class="dropdown">
-                  <li><a href="wk1_response.html">wk1 response</a></li>
-                  <li><a href="wk2_response.html">wk2 response</a></li>
-                  <li><a href="#">wk3 response</a></li>
-                </ul>
-              </li>
-              <li><a href="#">class exercises</a>
-                <ul class="dropdown">
-                  <li><a href="wk3_exercise.html">mad libs</a></li>
-                </ul>
-              </li>
-              <li><a href="https://github.com/jasminb976" target = "_blank">github</a></li>
-            </ul>
-          </nav><img src = "images/bow.jpg" height = "40px" id="img1"> 
-        <p><b>Hello!</b> welcome to my little space on the internet •ᴗ• this website holds all my projects and assignments for a future portfolio </p>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="aboutMe.html" id="about">about me</a>
+          <a href="wk1_response.html" id="weekResponse1">wk response 1</a>
+          <a href="wk2_response.html" id="weekResponse2">wk response 2</a>
+          <a href="wk3_exercise.html" id="classExercise">class exercise - mad libs</a>
+          <a href="codingPractice1.html" id="codingPractice1">coding practice 1</a>
+          <a href="#" id="codingPractice2">coding practice 2 - ideation</a>
+          <a href="#" id="codingPractice2pt2">coding practice 2 - creation</a>
+          <a href="https://github.com/jasminb976" id="github">github</a>
+        </div>
+
+        <p><img src = "images/bow.jpg" height = "40px" id="img1"> <b>Hello!</b> welcome to my little space on the internet •ᴗ• this website holds all my projects and assignments for a future portfolio </p>
         <p>fun fact: i have a cat named cookies </p></div>
         <h3>✧ updates</h3>
         <hr>
@@ -237,7 +193,7 @@
           <b>aug, 28:</b> created about me page as class exercise <br>
         </div>
         <marquee behavior="scroll" direction="left"><img src = "images/fish.gif" width = "50px"><img src = "images/fish.gif" width = "50px"><img src = "images/fish.gif" width = "60px"><img src = "images/fish.gif" width = "50px"><img src = "images/fish.gif" width = "50px"><img src = "images/fish.gif" width = "50px"><img src = "images/fish.gif" width = "50px"><img src = "images/fish.gif" width = "50px"><img src = "images/fish.gif" width = "50px"><img src = "images/fish.gif" width = "50px"></marquee>
-    </main>
+      </main>
     <script>
       function createDecorativeElements() {
         const elements = ["❍｡º○ ○º｡❍", "∘˙○˚", "ଳ"];
