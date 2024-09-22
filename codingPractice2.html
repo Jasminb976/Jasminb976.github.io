@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Practice 2 - ideation</title>
+    <style>
+        body {
+            margin:0;
+            font-family: Arial;
+            background-color: #C8B8DB;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:#F9F4F5;
+        }
+        h1{
+            background-color: #70587C;
+            color:#F9F4F5;
+            padding: 14px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #502F4C;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #F9F4F5;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .active {
+            background-color: #70587C;
+            color: black;
+        }
+
+        .topnav .icon {display: none;}
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 17px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            color: #F9F4F5;
+            background-color: #70587C;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px none;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: whitesmoke;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .topnav a:hover, .dropdown:hover .dropbtn {
+            background-color: #C8B8DB;
+            color: white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #C8B8DB;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        h1{
+            text-align: center;
+        }
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 50px;
+            text-align: center;
+        }
+
+        #tab1 {background-color:#8380B6;}
+        #tab2 {background-color:#70587C;}
+        #tab3 {background-color:#8380B6;}
+        #tab4 {background-color:#70587C;}
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav.responsive .dropdown {float: none;}
+            .topnav.responsive .dropdown-content {position: relative;}
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">home</a>
+        <a href="aboutMe.html">about me</a>
+        <div class="dropdown">
+            <button class="dropbtn">week responses 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="wk1_response.html">wk response 1</a>
+              <a href="wk2_response.html">wk response 2</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">coding practices 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="codingPractice1.html">coding practice 1</a>
+            <a href="codingPractice2pt2.html">coding practice 2 - creation</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!--header-->
+    <br>
+    <marquee> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"></marquee>
+    <h1>Coding Practice 2: Ideation</h1>
+    <marquee> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"> <img src="images/marioStar.gif" width="05%" height="05%"></marquee>
+    <br>
+    
+    <!--tab body-->
+    <div id="tab1" class="tabcontent">
+        <h2>What's in my bag</h2><b>- Katherine Yang</b>
+        <hr>
+        <p>Out of the list of ideas, I chose Katherine Yang's <a href="https://taper.badquar.to/12/whats_in_my_bag.html">What's in my bag</a> because it's the website starts as a simple list, but as you continuously press the bottom button, it keeps adding sentences to each item. </p>
+        <p>In terms of the HTML and CSS, it has the most simplistic code. The majority of the interactivity relied heavly on javascript. The design ressembles a list that you would make on your notes.</p>
+        <img src="images/katherineYang_HTML.png" width="40%" height="40%">
+        <p>HTML INTERACTION:</p>
+        <p>On a first glance, you can tell that the javascript code interacts with HTML elements using selectors like querySelector and it dynamically modifies the content of these elements based on the randomized order of descriptions</p>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+        <h2>Initialization</h2>
+        <hr>
+        <p>Between the script tags, an array is created containing several strings and labeled as t (note that throughout the array, there are 0's scattered throughout). Each string is represented as an object and it's associated context.</p> 
+        <p>Following the array, there is a .map() function, which applies a transformation to each element of an array. In this case, it takes the string-filled array and splits each string using the delimiter "0". This ultimately means that 
+            an "array of arrays" is created and each inner array contains the split parts of the original big array.
+        </p>
+        <p>The next part also assigns the value 5 to the variable n as well as initializes an empty array called o.</p>
+        <img src="images/initializationJS.png" width="60%" height="60%">
+        <br>
+        <h2>Randomization</h2>
+        <hr>
+        <p>After this, an outer for-loop is created and will run n times (in this case 5 times since n was previously 
+            declared as 5). For each iteration, a new empty array, e, is created and an inner for-loop is executed.
+        </p>
+        <p>The inner for-loop iterates over the elements of the main array, t. You can tell this is the case as "a < t.length" is defined in the condition.</p>
+        <p>Next, the index, a, is pushed into the array of the outer for-loop, e. The e array is then transformed through the .map() function.</p>
+        <p>The only thing I was sure of in the next line was the Math.Random() function. After searching more on this syntax, I believe each index, x, in array e is associated with a random value, s.
+            The array is sorted based on these random values and then mapped back to its original indices.
+        </p>
+        <p>The tranformed e array replaces the original e.</p>
+        <p>Results: After both loops are completed, the final e array containes the randomized indices based on the initial order of elements in t. This randomized order is stored in array o.</p>
+        <img src="images/randomization.png" width="40%" height="40%">
+    </div>
+
+    <div id="tab3" class="tabcontent">
+        <h2>Adjustment</h2>
+        <hr>
+        <p><mark>o[n - 1]</mark> refers to the last array in the o array (which was generated earlier in the code). Then, you are searching for an element in that array where the value is equal to <mark>t.length - 1</mark>.
+            Once found, the index of this element is assigned to the variable z.
+        </p>
+        <p><mark>o[n - 1].splice(z, 1)</mark> removes the element that was matched in the previous line.</p>
+        <p><mark>o[n - 1].push(t.length - 1)</mark> After removing the element, this line adds the t.length-1 back to the end of the same array.</p>
+        <p><mark>d = document</mark> declares the document object as the variable, d.</p>
+        <p><mark>b = d[q="querySelector"]("#b")</mark> has b assigned to the result of querying the DOM for an element with the ID "b". It also declares the querySelector tag to the q variable.</p>
+        <p><mark>l = d[q]("#l")</mark> has l being assigned to the result of querying the DOM for an element with the ID "l"</p>
+        <p><mark>r = h = 0</mark> initializes variables, r and h, to 0.</p>
+        <img src="images/adjustment.png" width="50%" height="50%">
+    </div>
+
+    <div id="tab4" class="tabcontent">
+        <h2>Display Logic</h2>
+        <hr>
+        <p>First off, <mark>l.onclick=()=></mark> sets up event handling for a click action.</p>
+        <p>Next, there is an if-else loop implemented. For the if-condition, I assume that it checks whether r (the current round) is non-zero.</p>
+        <p><mark>e = o[r][h]</mark> retrieves an index, e, from the current round in o.</p>
+        <p><mark>a = b.querySelectorAll("p")[e]</mark> gets the corresponding paragraph element from the HTML with the same index</p>
+        <p><mark>i = t[e][r]</mark> assigns t[e][r] to i, which holds the actual description text.</p>
+        <p><mark>a.innerHTML+=`—<i>${i}</i>`</mark> has the description appened to the inner HTML of the selected paragraph element with an added dash and italic tags.</p>
+        <p><mark>h++</mark> increments the index h</p>
+        <p><mark>h==t.length&&(r++,h=0,r==o.length&&(l.remove()))</mark> ultimately removes the click event listener once all rounds are completed</p>
+        <p>In the else block, 
+            <mark>b.innerHTML+=`<p><i>${t[h][r]}</i></p>`</mark> will append a new paragraph with the first description from t.          
+        </p>
+        <p><mark>h++</mark> increments the index h.</p>
+        <p><mark>h == t.length&&(r++, h = 0)</mark> says that if all descriptions are displayed, it moves onto the next round.</p>
+        <p>Based on all this, I believe that the if-block executes once all the items and it starts attaching descriptions to the items whereas the else-block executes first. This is based on the fact that the button (l) is removed towards the end of the if-block and after you click the button and all descriptions are appended to their items.</p>
+        <img src="images/diplayLogic.png" width="50%" height="50%">
+    </div>
+
+    <button class="tablink" onclick="openCity('tab1', this, '#8380B6')" id="defaultOpen">HTML/CSS</button>
+    <button class="tablink" onclick="openCity('tab2', this, '#70587C')">Initialization + Randomization</button>
+    <button class="tablink" onclick="openCity('tab3', this, '#8380B6')">Adjustment</button>
+    <button class="tablink" onclick="openCity('tab4', this, '#70587C')">Display Logic</button>
+
+    <!--Javascript portion-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+
+        function openCity(cityName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(cityName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

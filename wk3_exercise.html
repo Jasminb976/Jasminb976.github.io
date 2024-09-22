@@ -45,6 +45,22 @@
         font-family: Poppins;
         font-weight: bold;
     }
+    a{
+        background-color: aliceblue ;
+        color: rgb(112, 156, 194);
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 15px;
+        border: none;
+        padding: 5px 15px;
+    }
+    a:hover{
+        background-color: rgba(70, 88, 161, 0.549);
+        color: aliceblue;
+        transform: rotate(-10deg);
+        transform: rotate(10deg);
+    }
   </style>
  </head>
  <body>
@@ -59,7 +75,10 @@
  
  <button id="lib-button" onclick = "madlib()" href= "#story">Lib it!</button>
  <br> <br>
- <div id="story"></div>
+ <div id="story"></div> 
+ <br>
+ <a href = "index.html">go back home</a>
+ <br> <br>
   </main>
  </body>
  <script>
@@ -68,9 +87,8 @@
         var adjective = document.getElementById("adjective").value;
         var name = document.getElementById("person").value;
 
-        document.getElementById('story').innerHTML = "One day, " + name + " bought a " + noun + " that was really " + adjective + "."
-
-        
+        document.getElementById('story').innerHTML = "One day, " + name + " bought a " + noun + " that was really " + adjective + "."  
     }
+
  </script>
 </html>
