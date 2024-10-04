@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Practice 2 - Creation</title>
+    <link rel="stylesheet" href="cpi2pt2.css" />
+</head>
+<body>
+  <div id="page">
+		
+    <div id="titlebar">
+      <h1>Welcome to Notepad!</h1>
+    </div>
+    <div id="bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">Me</a></li>
+            <li><a href="wk1_response.html">Wk1 response</a></li>
+            <li><a href="wk2_response.html">Wk2 response</a></li>
+            <li><a href="codingPractice1.html">Coding Practice 1</a></li>
+            <li><a href="codingPractice2.html">Coding Practice 2 - ideation</a></li>
+        </ul>
+    </div>
+    <div id="main">
+      <h1>Grocery list:</h1>
+      <br>
+      <div id = "d">
+        <div id = "b"></div>
+        <button id = "l">Type...</button>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+  <div id="page2">
+    <div id="titlebar2">
+      <h1>Note:</h1>
+    </div>
+    <div id="main2">
+      <br>
+      <p>The original project reminded greatly of a to-do list that you would find in your notes.
+        Unfortunately, I wasn't able to execute it terms of ideas. So instead, I decided to based it on a grocery list that 
+        I had on my phone and I added extra opinions or phrases that connected to the ingredient. I had a difficult time in executing the code at first
+        because it would stop by the third ingredient, so I had to refer to the original code multiple times.   
+      </p>
+    </div>
+  </div>
+  <div id="footer2"></div>
+  <script>
+    let t = [
+        "yogurt 0 for my breaktfast parfaits 0 refreshing way to start the morning 0 light and airy 0 cant wait for tmmrw morning!", 
+        "spinach 0 mom says i need to add more greens to my diet 0 maybe make some pesto? 0 a salad? 0 idk how else to make spinach T-T",
+        "cucumbers 0 my fav vegetable 0 and for spa day! 0 my eye bags are crying for help 0 and a refreshing drink alongside too! ",
+        "strawberries 0 hey nana look at these glass! 0 i can`t believe they`re only one hundred yen 0 little red strawberries? 0 no good", 
+        "oatmilk 0 i dont taste the difference bewteen regular and oat 0 but maybe i do 0 why is it more expensive in cafes? 0 buying out of habit",
+        "bread 0 shorter lunch breaks means quick foods to make 0 many combos can be made with sandwiches! 0 a grilled cheese 0 or a turkey ham + american cheese?",
+        "sweet potatoes 0 potatoes, but sweeter? 0 some sweet potato fries for dinner tonight 0 maybe with some steak 0 or chicken nuggets too?",
+        "turkey bacon 0 yummy bacon 0 cant go wrong with bacon0 in a sandwich 0 a breakfast sandwich!",
+        "tomatoes 0 great for cooking! 0 dont like them raw 0 except in burgers 0 mmmm burgers"].map((e=>e.split(0))),n=5,o=[];for(u=0;u<n;u++){e=[];for(a=0;a<t.length;a++)e.push(a);e=e.map(x=>({v:x,s:Math.random()})).sort((a,b)=>a.s-b.s).map(x=>x.v),o.push(e)}z=o[n-1].findIndex((e=>e==t.length-1));o[n-1].splice(z,1),o[n-1].push(t.length-1);d=document,b=d[q="querySelector"]("#b"),l=d[q]("#l"),r=h=0;l.onclick=()=>{if(r){e=o[r][h],a=b.querySelectorAll("p")[e],i=t[e][r];a.innerHTML+=`- <i>${i}</i>`,h++,h==t.length&&(r++,h=0,r==o.length&&(l.remove()))}else b.innerHTML+=`<p style = "color:#6D213C"><b>${t[h][r]}</b></p>`,h++,h==t.length&&(r++,h=0)};
+  </script>
+</body>
+</html>
